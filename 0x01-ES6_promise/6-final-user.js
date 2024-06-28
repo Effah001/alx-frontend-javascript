@@ -9,8 +9,7 @@ export default function handleSignupAndUpload(firstName, lastName, filename) {
     .then((results) => results.map((result) => {
       if (result.status === 'fulfilled') {
         return result.value;
-      } else {
-        return { status: result.status, reason: result.reason.message };
       }
+      return { status: result.status, reason: result.reason.message };
     }));
 }
