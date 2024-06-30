@@ -18,6 +18,6 @@ export default class Building {
   }
 
   evacuationWarningMessage() {
-    throw new Error('Method evacuationWarningMessage must be implemented');
+    throw new Error(`${this.constructor.name} must implement evacuationWarningMessage`);
   }
 }
